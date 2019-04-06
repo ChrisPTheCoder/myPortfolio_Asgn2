@@ -1,0 +1,39 @@
+{
+  "name": "comp308_asgn2",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=3.5.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "ejs": "~2.5.5",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0"
+  },
+  "description": "Created By: Phuong Linh Pham 300923800",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisPTheCoder/myPortfolio_Asgn2.git"
+  },
+  "keywords": [
+    "COMP308",
+    "Assignment2",
+    "Taera",
+    "Kwon"
+  ],
+  "author": "Phuong Linh Pham 300923800",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisPTheCoder/myPortfolio_Asgn2.git"
+  },
+  "homepage": "https://github.com/ChrisPTheCoder/myPortfolio_Asgn2#readme"
+}

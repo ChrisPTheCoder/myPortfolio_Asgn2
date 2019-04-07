@@ -11,17 +11,18 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "connect-flash": "^0.1.1",
     "bower": "^1.8.8",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "~1.4.3",
-    "mongoose": "^4.8.6",
     "debug": "~2.6.0",
     "ejs": "~2.5.5",
     "express": "^4.16.4",
-    "express-session": "^1.15.1",
+    "express-session": "^1.15.6",
+    "mongoose": "^4.8.6",
     "morgan": "^1.9.1",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1",
     "serve-favicon": "^2.5.0"
   },
   "description": "Created By: Phuong Linh Pham 300923800",
@@ -46,5 +47,5 @@
     "@types/express-session": "0.0.32",
     "@types/passport": "^0.3.3",
     "@types/passport-local": "^1.0.29"
-}
+  }
 }

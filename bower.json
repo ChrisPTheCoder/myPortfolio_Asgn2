@@ -1,0 +1,31 @@
+{
+  "name": "comp308_asign2",
+  "description": "Created By: Phuong Linh Pham (300923800)",
+  "main": "server.js",
+  "authors": [
+    "Phuong Linh Pham (300923800)"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "COMP308",
+    "Assignment2",
+    "Taera",
+    "Kwon"
+  ],
+  "homepage": "https://github.com/ChrisPTheCoder/myPortfolio_Asgn2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/Scripts/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "hover": "Hover#^2.1.0",
+    "animate.css": "^3.5.2"
+  }
+}

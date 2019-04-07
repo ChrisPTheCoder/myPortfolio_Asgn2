@@ -1,8 +1,8 @@
 /*
   File name: users.js
-  Author's name: Taera Kwon
-  StudentID: 300755802
-  Web App name: comp308_authentication
+  Author's name: Phuong Linh Pham
+  StudentID: 300923800
+  Web App name: comp308_asgn2
 */
 
 // require modules for our User Model

@@ -11,13 +11,17 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
     "bower": "^1.8.8",
     "cookie-parser": "~1.4.3",
     "mongoose": "^4.8.6",
     "debug": "~2.6.0",
     "ejs": "~2.5.5",
     "express": "^4.16.4",
+    "express-session": "^1.15.1",
     "morgan": "^1.9.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
     "serve-favicon": "^2.5.0"
   },
   "description": "Created By: Phuong Linh Pham 300923800",
@@ -29,13 +33,18 @@
   "keywords": [
     "COMP308",
     "Assignment2",
-    "Taera",
-    "Kwon"
+    "Phuong Linh",
+    "Pham"
   ],
   "author": "Phuong Linh Pham 300923800",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ChrisPTheCoder/myPortfolio_Asgn2.git"
   },
-  "homepage": "https://github.com/ChrisPTheCoder/myPortfolio_Asgn2#readme"
+  "homepage": "https://github.com/ChrisPTheCoder/myPortfolio_Asgn2#readme",
+  "devDependencies": {
+    "@types/express-session": "0.0.32",
+    "@types/passport": "^0.3.3",
+    "@types/passport-local": "^1.0.29"
+}
 }

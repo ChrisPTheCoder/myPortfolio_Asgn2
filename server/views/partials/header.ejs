@@ -1,0 +1,78 @@
+<!-- 
+  Author: Phuong Linh Pham
+  File Name: header.ejs
+  Website Name: Phuong Linh Pham's Express Portfolio Site
+  Description: This is the HEADER 
+  Web App name: comp308_asgn2
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phuong Linh Pham | <%= title %></title>
+    <!-- STYLES -->
+    <!-- CSS SECTION -->    
+    <link rel="stylesheet" href="/Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/Scripts/lib/hover/css/hover.css"> <!-- For hover effect -->
+    <link rel="stylesheet" href="/Scripts/lib/animate.css/animate.min.css"> <!-- For animate effect -->
+    <link rel="stylesheet" href="/Scripts/lib/font-awesome/css/font-awesome.min.css">    
+    <link rel='stylesheet' href='/Content/app.css'/>        
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->    
+      <nav class="navbar navbar-toggleable-md navbar-light" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button id="nav-toggle-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-taera">
+              <!-- Customised Hamberger (To change color) -->
+              MENU <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>              
+            </button>
+            <!-- Brand and toggle get grouped for better mobile display -->  
+            <a class="navbar-brand hvr-pulse" href="/">Phuong Linh Pham</a>
+          </div> <!-- .navbar-header -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-collapse-taera">          
+              <ul class="nav nav-tabs navbar-right">
+                  <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                  <% if(title == "Home") { %>
+                    <li class="active hvr-grow"><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                  <% } else { %>  
+                    <li class="hvr-grow"><a href="/"><i class="fa fa-home"></i> Home</a></li>                
+                  <% } if(title == "About") { %>
+                    <li class="active hvr-grow"><a href="/about"><i class="fa fa-address-book-o"></i> About</a></li>
+                  <% } else { %>  
+                    <li class="hvr-grow"><a href="/about"><i class="fa fa-address-book-o"></i> About</a></li>
+                  <% } if(title == "Projects") {%>
+                    <li class="active hvr-grow"><a href="/projects"><i class="fa fa-archive"></i> Projects</a></li>
+                  <% } else { %>  
+                    <li class="hvr-grow"><a href="/projects"><i class="fa fa-archive"></i> Projects</a></li>
+                  <% } if(title == "Services") {%>
+                    <li class="active hvr-grow"><a href="/services"><i class="fa fa-briefcase"></i> Services</a></li>
+                  <% } else { %>  
+                    <li class="hvr-grow"><a href="/services"><i class="fa fa-briefcase"></i> Services</a></li>
+                  <% } if(title == "Contact") {%>
+                    <li class="active hvr-buzz"><a href="/contact"><i class="fa fa-phone"></i> Contact</a></li>
+                  <% } else { %>                    
+                    <li class="hvr-buzz"><a href="/contact"><i class="fa fa-phone"></i> Contact</a></li>
+                  <% } %>
+                  <% if(typeof userName == 'string' && userName) { %>
+                  <% if(title == "Business Contacts") { %>
+                    <li class="active hvr-grow"><a href="/businessContact"><i class="fa fa-book fa-lg"></i> Business Contacts</a></li>
+                  <% } else { %>
+                    <li class="hvr-grow"><a href="/businessContact"><i class="fa fa-book fa-lg"></i> Business Contacts</a></li>
+                  <% } %>
+                  <% } %>
+              </ul>
+           </div> <!-- .navbar-collapse -->
+        </div><!-- .container -->
+      </nav> <!-- .navbar -->
+    
+  

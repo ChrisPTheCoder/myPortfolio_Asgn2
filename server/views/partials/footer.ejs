@@ -1,0 +1,28 @@
+<nav class="navbar navbar-fixed-bottom">
+  <div class="container">
+    <h5 class="navbar-text">&copy; 2019 All Rights Reserved.</h4>
+    <ul class="nav navbar-nav navbar-right">
+      <% if(typeof userName == 'string' && userName) { %>
+      <li class="navbar-text"><i class="fa fa-user"></i> Welcome, <%= userName %></li>
+      <li><a href="/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
+      <% } else { %>
+      <li><a href="/login"><i class="fa fa-sign-in"></i> Login</a></li>
+      <% } %>
+    </ul>
+  </div>
+</nav>
+<!-- SCRIPTS -->
+<!-- jQuery -->
+    <script src="/Scripts/lib/jquery/dist/jquery.min.js"></script>    
+    <script src="/Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>    
+<!-- Custom Script-->
+    <script src="/Scripts/app.js"></script>
+  </body>
+</html>
+
+<!-- 
+  Author: Phuong Linh Pham (300923800)
+  File Name: footer.ejs
+  Website Name: Phuong Linh Pham's Express Portfolio Site
+  Description: This is the Footer 
+-->

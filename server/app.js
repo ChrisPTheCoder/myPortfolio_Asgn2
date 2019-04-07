@@ -1,3 +1,11 @@
+/*
+  File name: app.js
+  Author's name: Phuong Linh Pham
+  StudentID: 300923800
+  Web App name: comp308_asgn2
+*/
+
+// MODULES REQUIRED FOR THE PROJECT
 let express = require('express');
 let path = require('path');
 let favicon = require('serve-favicon');
@@ -5,8 +13,21 @@ let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
 
-let index = require('../routes/index');
+// MONGOOSE FOR DB ACCESS
+let mongoose = require('mongoose');
+// MONGODB URI
+let config = require('./config/db');
 
+// MONGO DB CONNECTION (DEFINING DB)
+mongoose.connect(process.env.URI || config.URI);
+let db = mongoose.connection;
+db.on('error', console.error.bind(console, 'mongoose connection error:'));
+db.once('open', () => {
+  console.log("Successfully connected to MongoDB");
+})
+
+// DEFINE ROUTES
+let index = require('./routes/index');
 let app = express();
 
 // view engine setup
@@ -19,7 +40,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../client')));
 
 app.use('/', index);
 

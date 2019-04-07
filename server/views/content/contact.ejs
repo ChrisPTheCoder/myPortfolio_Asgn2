@@ -9,21 +9,60 @@
 <% include ../partials/header.ejs %>
   <div class="container-fluid">
     <div class="row text-center">
-      <table class="contact_table">
+    <div class="col-md-offset-0 col-md-0">
+     <form id="contact-form" method="get" role="form" onsubmit="confirmInput()" action="/">
+                <div class="messages"></div>       
+                <div class="controls">                 
+                            <div class="form-group">
+                                <label for="form_name">First Name *</label>
+                                <input id="form_name" type="text" name="fname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>                  
+                            <div class="form-group">
+                                <label for="form_lastname">Last Name *</label>
+                                <input id="form_lastname" type="text" name="lname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>                     
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>                      
+                            <input type="submit" class="btn btn-success btn-send" value="Send message">            
+                    </div>
+                </div>
+            </form>
+</div>
+<div class="row text-center">
+<div class="bodyContainer contact text-center">
+        <address>
+          <strong>Address</strong>
+          <br>
+          4 Wetherby Drive, Scarborough ON M1J1L6<br>     
+          <strong>Phone</strong>
+          <br>4379967374   <br>
+        </address>
         <tr>
           <td class="col1"><i class="fa fa-2x fa-envelope"></i></td>
           <td class="col2"><a href="mailto:chris.p.0307@gmail.com" class="hvr-skew">E-mail: chris.p.0307@gmail.com</a></td>
         </tr>
         <tr>
           <td class="col1"><i class="fa fa-2x fa-linkedin-square"></i></td>
-          <td class="col2"><a href="https://www.linkedin.com/in/chris-pham-5b6251146/" target="_blank" class="hvr-skew">LinkedIn</a></td>
+          <td class="col2"><a href="https://www.linkedin.com/in/taera-kwon-50316639/" target="_blank" class="hvr-skew">Linkedin</a></td>
         </tr>
         <tr>
           <td class="col1"><i class="fa fa-2x fa-github"></i></td>
-          <td class="col2"><a href="https://github.com/ChrisPTheCoder" target="_blank" class="hvr-skew">GitHub</a></td>
+          <td class="col2"><a href="https://github.com/taerakwon" target="_blank" class="hvr-skew">Github</a></td>
         </tr>
-      </table>
+        </address>
+
     </div> <!-- .about -->
+    <div>
   </div> <!-- .container-fluid -->
 <% include ../partials/footer.ejs %>
 

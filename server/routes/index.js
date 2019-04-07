@@ -46,9 +46,9 @@ router.get('/projects', function(req, res, next) {
     title: 'Projects',
     contacts: '',
     userName: req.user ? req.user.username: '',
-    project_vba: 'Developed Resource Management tool using MS Excel and VBA for Ministry of Children and Youth Services',
-    project_sharepoint: 'Developed Intranet Website for Solutions Development Branch in Ministry of Children and Youth Services using SharePonint 2010 following W3C Standards',
-    project_kace: 'Configured DELL KACE inventory management system to meet the Business Strategy for Industrial Alliance Clarington'
+    project_dragonslayer: 'Created 2D top-down shooting game with 3 stages and different levels',
+    project_moviemaniac: 'A web app of user’s movie collection that allows the user to review, rent and buy cinema movies or add to their collections',
+    project_worldcuisine: 'Implemented APIs that manages restaurants, cuisines, tables, orders to satisfy customer’s request  &	Published in Amazon Web Service with RDS and managed an API with APIGee management platform'
   });
 });
 
